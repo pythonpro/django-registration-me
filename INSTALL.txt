@@ -11,7 +11,7 @@ also type the following to download and install in one step::
 
 Or if you're using ``pip``::
 
-    pip install django-registration
+    pip install django-registration-me
 
 Or if you'd prefer you can simply place the included ``registration``
 directory somewhere on your Python path, or symlink to it from
@@ -22,3 +22,7 @@ Note that this application requires Python 2.3 or later, a
 functional installation of Django 1.0 or newer and MongoEngine.
 You can obtain Python from http://www.python.org/, Django from
 http://www.djangoproject.com/ and MongoEngine from http://mongoengine.org/ .
+
+This application has 2 mandatory settings.py parameters:
+ACCOUNT_ACTIVATION_DAYS = 3  # From classical django-registration.
+SITE = {'name': 'Cool Site', 'domain': 'www.coolsite.com'}
